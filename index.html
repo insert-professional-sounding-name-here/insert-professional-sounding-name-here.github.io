@@ -13,4 +13,9 @@
 
 <script>
     var myMap = new Mazemap.Map({container: 'mazemap-container'});
+    
+
+    myMap.on('click', function(e){
+    myMap.flyTo({center:e.lngLat, zoom: 18});
+});
 </script>
