@@ -1,3 +1,5 @@
+<!--This project uses MazeMap @ 2023 (https://www.mazemap.com) -->
+<!--Agile Profess AR App-->
 <!DOCTYPE html>
 <head>
     <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
@@ -19,12 +21,15 @@
             // container id specified in the HTML
             container: 'map',
 
-            campuses: 121,
+            campuses: 368, // 368 is UCLan
 
             // initial position in lngLat format
-            center: {lng: 13.270286316716465, lat: 52.502217640505705},
+            // api intital pos vals: center: {lng: 13.270286316716465, lat: 52.502217640505705},
+            // c+t building loc: 53.763620352289536, -2.7090873752959252
+            // Student centre loc: lng: -2.7071393359127285, lat: 53.76267154967661
+            center: {lng: -2.7071393359127285, lat: 53.76267154967661},
 
-            // initial zoom
+            // initial zoom level
             zoom: 18,
 
             zLevel: 3
