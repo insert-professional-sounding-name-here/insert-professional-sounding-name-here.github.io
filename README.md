@@ -1,7 +1,6 @@
-# page_test
+# IPSNH.github.io MazeMap
 
-Welcome to the insert-professional-sounding-name-here.github.io wiki! This site is used to host the embedded map for our uni assignment app.
-
+Welcome to the insert-professional-sounding-name-here.github.io. This site is used to host the embedded map for our uni assignment app.
 Maze-Data-API is licensed under the Apache License 2.0.
 
 All API data is taken from the official MazeMap websites and GitHub Pages: 
