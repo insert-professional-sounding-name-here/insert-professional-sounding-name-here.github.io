@@ -5,10 +5,8 @@ Welcome to the insert-professional-sounding-name-here.github.io. This site is us
 ## The App
 Our assingment breif is to create a application which helps disabled students get to know the preston campus here at UCLan. Apart of this app we will embed a top down map view of the campus via a website using HTML and a small part of javascript.
 
-
-
 ## MazeMap
-(Maze map info here)
+MazeMap is a wayfinding application used to help users find their way around certain mapped campuses around the world.
 <img width="1296" alt="Screenshot 2023-11-15 at 22 31 19" src="https://github.com/insert-professional-sounding-name-here/insert-professional-sounding-name-here.github.io/assets/20979204/83ee1ffb-89c8-490a-a24d-35691baebc49">
 
 ## Maze-Data-API
@@ -24,3 +22,4 @@ MazeMap uses campus IDs to show campuses around the world, UCLan campus ID is 36
 - https://debug.mazemap.com/poi-inspector/?llz=-2.627235544560108,54.04485640674025,8.146123790563951
 
 <img width="1331" alt="Screenshot 2023-11-15 at 22 25 04" src="https://github.com/insert-professional-sounding-name-here/insert-professional-sounding-name-here.github.io/assets/20979204/4e579d30-1745-43f5-94a7-946534bf6d17">
+
