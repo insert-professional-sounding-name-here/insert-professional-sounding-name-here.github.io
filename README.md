@@ -3,10 +3,11 @@
 Welcome to the insert-professional-sounding-name-here.github.io. This site is used to host the embedded map for our uni assignment app.
 
 ## The App
-Our assignment brief is to create a application which helps disabled students get to know the Preston campus here at UCLan. Apart of this app we will embed a top down map view of the campus via a website using HTML and a small part of javascript.
+Our assignment brief is to create a application which helps disabled students get to know the Preston campus here at UCLan. Apart of this app we will embed a top down map view of the campus via a website using HTML and a small part of javascript to embed the map onto the webpage. This HTML file will then be hosted via GitHub Pages for easy access.
 
 ## MazeMap
 MazeMap is a wayfinding application used to help users find their way around certain mapped campuses around the world. Many of these campuses are universities including the UCLan Preston campus, which our assignment brief is focused around.
+
 <img width="1296" alt="Screenshot 2023-11-15 at 22 31 19" src="https://github.com/insert-professional-sounding-name-here/insert-professional-sounding-name-here.github.io/assets/20979204/83ee1ffb-89c8-490a-a24d-35691baebc49">
 
 ## Maze-Data-API
@@ -23,4 +24,6 @@ MazeMap uses campus IDs to show campuses around the world, UCLan campus ID is 36
 
 <img width="1331" alt="Screenshot 2023-11-15 at 22 25 04" src="https://github.com/insert-professional-sounding-name-here/insert-professional-sounding-name-here.github.io/assets/20979204/4e579d30-1745-43f5-94a7-946534bf6d17">
 
-### This repo is only for educational use for a university assingment and not to be used in a real world situation or for commerical purposes.
+#### This repo is only for educational use for a university assingment and not to be used in a real world situation or for commerical purposes. All copyrights reserved to their respective owners. MazeMap and related services are provided by MazeMap AS
+
+MazeMap Terms can be found at: https://www.mazemap.com/terms
