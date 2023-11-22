@@ -3,7 +3,6 @@
 //This project uses MazeMap wayfinding application Copyright MazeMap 2023 (https://www.mazemap.com)
 //Copyright information can be found via the GitHub Repo
 
-
 //This is the JavaScript file which contains the script which lets the MazeMap work.
 
 var map = new Mazemap.Map({
