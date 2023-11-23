@@ -48,6 +48,20 @@ CSS can be found in "styles.css file"-->
         // This lets users see floors within buildings:
         map.addControl(new Mazemap.mapboxgl.NavigationControl());
 
+        var mySearch = new Mazemap.Search.SearchController({
+        campusid: 50,
+
+        rows: 10,
+
+        withpois: true,
+        withbuilding: false,
+        withtype: false,
+        withcampus: false,
+
+    resultsFormat: 'geojson'
+});
+
+
     </script>
 
 </body>
