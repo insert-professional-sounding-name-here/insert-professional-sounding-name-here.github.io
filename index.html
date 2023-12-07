@@ -23,7 +23,9 @@ CSS can be found in "styles.css file"-->
         <div id="suggestions" class="search-suggestions default"></div>
     </div>
 
-    <script>
+    <script> 
+    //Map scripting:
+
         var myMap = new Mazemap.Map
         ({
             container: 'map',
@@ -33,6 +35,7 @@ CSS can be found in "styles.css file"-->
             // Position data:
             // initial position in lngLat format Student centre loc: 
             // lng: -2.7071393359127285, lat: 53.76267154967661
+
             center: {lng: -2.7071393359127285, lat: 53.76267154967661},
 
             zoom: 16,
@@ -44,19 +47,23 @@ CSS can be found in "styles.css file"-->
             touchZoomRotate: true // users can rotate
         });
 
-        myMap.on('load', function(){
-            var customZLevelBar1 = new Mazemap.ZLevelBarControl( {
+        myMap.on('load', function() //adds Z bar controls (floor controls)
+        {
+            var customZLevelBar1 = new Mazemap.ZLevelBarControl
+            ({
                 className: 'custom-zlevel-bar',
                 autoUpdate: true,
                 maxHeight: 300
-            } );
-            myMap.addControl( customZLevelBar1, 'bottom-right' );
+            });
+
+            myMap.addControl( customZLevelBar1, 'bottom-right' ); //floor control loction on screen
         });
 
-        var mySearch = new Mazemap.Search.SearchController({
-            campusid: 368,
+        var mySearch = new Mazemap.Search.SearchController //limits search function to UCLan, so only uclan rooms show in results
+        ({
+            campusid: 368, //UCLan campus ID
 
-            rows: 10,
+            rows: 10, //How many results show up
 
             withpois: true,
             withbuilding: false,
@@ -66,18 +73,22 @@ CSS can be found in "styles.css file"-->
             resultsFormat: 'geojson'
         });
 
-        var mySearchInput = new Mazemap.Search.SearchInput({
+        var mySearchInput = new Mazemap.Search.SearchInput(
+            {
             container: document.getElementById('search-input-container'),
             input: document.getElementById('searchInput'),
             suggestions: document.getElementById('suggestions'),
             searchController: mySearch
-        }).on('itemclick', function(e){
+        })
+        
+        .on('itemclick', function(e){
 
             var poiFeature = e.item;
             placePoiMarker( poiFeature );
         });
 
-        var resultMarker = new Mazemap.MazeMarker({
+        var resultMarker = new Mazemap.MazeMarker
+        ({
             color: 'rgb(253, 117, 38)',
             innerCircle: true,
             innerCircleColor: '#FFF',
@@ -86,7 +97,8 @@ CSS can be found in "styles.css file"-->
             zLevel: 1
         })
 
-        function placePoiMarker(poi){
+        function placePoiMarker(poi)
+        {
             // Get a center point for the POI, because the data can return a polygon instead of just a point sometimes
             var lngLat = Mazemap.Util.getPoiLngLat(poi);
             var zLevel = poi.properties.zValue;
@@ -104,7 +116,6 @@ CSS can be found in "styles.css file"-->
         myMap.getCanvas().addEventListener('focus', function(){
             mySearchInput.hideSuggestions();
         });
-
 
     </script>
 </body>
