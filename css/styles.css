@@ -3,12 +3,13 @@ This repo is only for educational use for a university assignment
 and not to be used in a real world situation or for commerical purposes.
 This project uses MazeMap wayfinding application:
 Copyright MazeMap 2023 (https://www.mazemap.com).
-Copyright information can be found via the GitHub Repo*/
+Copyright information can be found via the GitHub Repo */
 
 /*This file contains the CSS style needed for the MazeMap to work correctly on he HTML */
 
 html, body 
     {
+        background-color: #007fb0; /* Sets background colour if map fails to load. HEX code is UCLan blue*/ 
         position: absolute; 
         top: 0px;
         bottom: 0px;
@@ -31,9 +32,9 @@ html, body
         z-index: 999;
     }
     
-p 
+p /* para txt colour, if map fails to load */
     {   
-        color: white /* para txt colour, if map fails to load */
+        color: rgb(0, 0, 0) 
     }
 
 
