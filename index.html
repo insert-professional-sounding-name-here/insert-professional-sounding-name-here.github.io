@@ -12,7 +12,7 @@ CSS can be found in "styles.css file"-->
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="/css/styles.css"> <!--Links to CSS sheet-->
-    
+
     <!--MazeMap data:-->
     <link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.114/mazemap.min.css">
     <script type='text/javascript' src='https://api.mazemap.com/js/v2.0.114/mazemap.min.js'></script>
@@ -106,16 +106,16 @@ CSS can be found in "styles.css file"-->
             resultsFormat: 'geojson'
         });
 
-        var mySearchInput = new Mazemap.Search.SearchInput(
-            {
+        var mySearchInput = new Mazemap.Search.SearchInput
+        ({
             container: document.getElementById('search-input-container'),
             input: document.getElementById('searchInput'),
             suggestions: document.getElementById('suggestions'),
             searchController: mySearch
         })
 
-        .on('itemclick', function(e){
-
+        .on('itemclick', function(e)
+        {
             var poiFeature = e.item;
             placePoiMarker( poiFeature );
         });
@@ -146,7 +146,8 @@ CSS can be found in "styles.css file"-->
             myMap.flyTo({center: lngLat, zoom: 19, duration: 2000});
         }
 
-        myMap.getCanvas().addEventListener('focus', function(){
+        myMap.getCanvas().addEventListener('focus', function()
+        {
             mySearchInput.hideSuggestions();
         });
 
