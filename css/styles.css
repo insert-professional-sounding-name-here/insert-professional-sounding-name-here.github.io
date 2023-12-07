@@ -11,17 +11,6 @@ body
     {
         background-color: #007fb0; /* Sets background colour if map fails to load. HEX code is UCLan blue*/ 
     }
-
-.search-control-default /*Search area styling*/
-    {
-        position: absolute; 
-        margin-left: calc( (100% - 20px)*(-1/2) );
-        top: 10px;
-        width: calc(100% - 20px);
-        left: 50%;
-        max-width: 300px;
-        z-index: 999;
-    }
     
 p /* para txt colour, if map fails to load */
     {   
