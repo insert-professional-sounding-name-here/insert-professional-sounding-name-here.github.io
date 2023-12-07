@@ -23,6 +23,8 @@ CSS can be found in "styles.css file"-->
         <div id="suggestions" class="search-suggestions default"></div>
     </div>
 
+    <p>Test - if you can see this, your broswer doesnt support JavaScript so the map will not work</p> <!--JS Failure text-->
+
     <script> 
     //Map scripting:
 
@@ -80,7 +82,7 @@ CSS can be found in "styles.css file"-->
             suggestions: document.getElementById('suggestions'),
             searchController: mySearch
         })
-        
+
         .on('itemclick', function(e){
 
             var poiFeature = e.item;
