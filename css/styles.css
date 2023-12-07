@@ -7,18 +7,9 @@ Copyright information can be found via the GitHub Repo */
 
 /*This file contains the CSS style needed for the MazeMap to work correctly on he HTML */
 
-html, body 
+body
     {
         background-color: #007fb0; /* Sets background colour if map fails to load. HEX code is UCLan blue*/ 
-        position: absolute; 
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        margin:0px;
-        padding:0px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
-        font-size: 12px;
     }
 
 .search-control-default /*Search area styling*/

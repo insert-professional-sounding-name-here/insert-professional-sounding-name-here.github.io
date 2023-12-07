@@ -9,12 +9,35 @@ CSS can be found in "styles.css file"-->
 <head>
     <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
     <meta charset="utf-8" />
-
+    <link rel="stylesheet" href="/css/styles.css"> <!--Links to CSS sheet-->
+    <!--MazeMap data:-->
     <link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.114/mazemap.min.css">
     <script type='text/javascript' src='https://api.mazemap.com/js/v2.0.114/mazemap.min.js'></script>
 
+<style> /*MazeMap CSS Search style*/
+    html, body 
+    {
+        position: absolute; 
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin:0px;
+        padding:0px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+        font-size: 12px;
+    }
+    .search-control-default{
+                 position: absolute;
+                 margin-left: calc( (100% - 20px)*(-1/2) );
+                 top: 10px;
+                 width: calc(100% - 20px);
+    left: 50%;
+            max-width: 300px;
+            z-index: 999;
+             }
+</style>
 </head>
-
 <body>
     <div id="map" aria-label="map view" tabindex="1" class="mazemap"></div>
     <div id="search-input-container" class='search-control-default'>
