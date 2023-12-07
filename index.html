@@ -13,22 +13,8 @@ CSS can be found in "styles.css file"-->
     <link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.114/mazemap.min.css">
     <script type='text/javascript' src='https://api.mazemap.com/js/v2.0.114/mazemap.min.js'></script>
 
-    <style>
-
-        html, body { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin:0px; padding:0px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; }
-
-            .search-control-default{
-                position: absolute;
-                margin-left: calc( (100% - 20px)*(-1/2) );
-                top: 10px;
-                width: calc(100% - 20px);
-                left: 50%;
-                max-width: 300px;
-                z-index: 999;
-            }
-
-    </style>
 </head>
+
 <body>
     <div id="map" aria-label="map view" tabindex="1" class="mazemap"></div>
     <div id="search-input-container" class='search-control-default'>
@@ -38,12 +24,12 @@ CSS can be found in "styles.css file"-->
     </div>
 
     <script>
-
-        // Just the same way to initialize as always...
-        var myMap = new Mazemap.Map({
+        var myMap = new Mazemap.Map
+        ({
             container: 'map',
 
             campuses: 368, // 368 is UCLan
+
             // Position data:
             // initial position in lngLat format Student centre loc: 
             // lng: -2.7071393359127285, lat: 53.76267154967661
@@ -53,8 +39,9 @@ CSS can be found in "styles.css file"-->
             zLevel: 1,
             zLevelControl: false,
             scrollZoom: true,
-            doubleClickZoom: true,
-            touchZoomRotate: true
+
+            doubleClickZoom: true, // users can double click to zoom in
+            touchZoomRotate: true // users can rotate
         });
 
         myMap.on('load', function(){
