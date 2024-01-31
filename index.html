@@ -105,11 +105,16 @@ CSS can be found in "styles.css file"-->
             resultsFormat: 'geojson'
         });
 
+        //Create a new instance of the Mazemap SearchInput
         var mySearchInput = new Mazemap.Search.SearchInput
         ({
+            //The container for the search input
             container: document.getElementById('search-input-container'),
+            //The actual search input element
             input: document.getElementById('searchInput'),
+            //The element where search suggestions will be displayed
             suggestions: document.getElementById('suggestions'),
+            //The search controller that handles the search logic
             searchController: mySearch
         })
 
