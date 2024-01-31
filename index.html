@@ -6,18 +6,22 @@
 CSS can be found in "styles.css file"-->
 
 <!DOCTYPE html>
+
+<!--Specifies which language to use:-->
+<html lang="en-GB">
+
 <head>
     <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
-    
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="/css/styles.css"> <!--Links to CSS sheet-->
+    <!--Links to fallback CSS sheet-->
+    <link rel="stylesheet" href="/css/fallback_styles.css">
 
     <!--MazeMap data:-->
     <link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.114/mazemap.min.css">
     <script type='text/javascript' src='https://api.mazemap.com/js/v2.0.114/mazemap.min.js'></script>
 
-    <style> /*MazeMap CSS Search style*/
+    <style> /*MazeMap CSS Search styling*/
         html, body 
         {
             position: absolute; 
@@ -31,7 +35,7 @@ CSS can be found in "styles.css file"-->
             font-size: 12px;
         }
 
-        .search-control-default
+        .search-control-default /*search box loc*/
         {
             position: absolute;
             margin-left: calc( (100% - 20px)*(-1/2) );
@@ -43,7 +47,6 @@ CSS can be found in "styles.css file"-->
         }
 
     </style>
-
 </head>
 
 <body>
@@ -106,11 +109,16 @@ CSS can be found in "styles.css file"-->
             resultsFormat: 'geojson'
         });
 
+        //Create a new instance of the Mazemap SearchInput
         var mySearchInput = new Mazemap.Search.SearchInput
         ({
+            //The container for the search input
             container: document.getElementById('search-input-container'),
+            //The actual search input element
             input: document.getElementById('searchInput'),
+            //The element where search suggestions will be displayed
             suggestions: document.getElementById('suggestions'),
+            //The search controller that handles the search logic
             searchController: mySearch
         })
 
